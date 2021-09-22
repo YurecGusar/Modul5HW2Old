@@ -11,5 +11,9 @@ namespace Modul5HW2.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        public string Register()
+        {
+            return "develop";
+        }
     }
 }
