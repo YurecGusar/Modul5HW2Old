@@ -1,0 +1,25 @@
+.reg-form{
+    
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 234, 255);
+    border-radius: 10%;
+}
+
+.reg-form > input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8%;
+}
+
+.reg-form > span{
+    margin-left: 10%;
+}
+tr:nth-child(2n) {
+	background-color:rgb(15, 233, 222);
+}
+
+tr:nth-child(3){
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

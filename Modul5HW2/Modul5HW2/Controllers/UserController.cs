@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Modul5HW2.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,18 @@ namespace Modul5HW2.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        [HttpPost]
+        [Route("register")]
+        public string Register([FromForm]User user)
+        {
+            if (string.IsNullOrEmpty(user.Name) || string.IsNullOrEmpty(user.Password))
+            {
+                return "Одно из полей не было заполнено";
+            }
+            else
+            {
+                return $"{user.Name} зарегестрирован";
+            }
+        }
     }
 }
